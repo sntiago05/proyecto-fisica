@@ -21,10 +21,6 @@ public class CiclistaMruSimulacion extends EjercicioSimulacion {
         fondo = new Image(getClass().getResource("/imgs/fondo.jpg").toString());
     }
 
-    public CiclistaMruSimulacion(Canvas canvas) {
-        super(canvas);
-    }
-
 
     @Override
     public void dibujar() {

@@ -84,7 +84,7 @@ public class MainController {
         VBox card = new VBox();
         card.setAlignment(Pos.CENTER);
         card.getStyleClass().add("card");
-        card.setPrefWidth(200);
+        card.setPrefWidth(250);
         card.setPrefHeight(250);
 
         Label titulo = new Label();
