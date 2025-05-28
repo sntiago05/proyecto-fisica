@@ -1,0 +1,55 @@
+.root {
+    -fx-font-family: "Montserrat";
+    -fx-background-color: #FFFFFF;
+}
+
+.button {
+    -fx-background-color: #3FB1EE;
+    -fx-background-radius: 20;
+    -fx-text-fill: #FFFFFF;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+
+.title {
+    -fx-font-size: 16px;
+}
+
+.button:hover {
+    -fx-background-color: #1976d2;
+}
+
+.pane-left {
+    -fx-background-color: #3FB1EE;
+}
+
+.floating-field {
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #ccc;
+    -fx-padding: 5 0 5 5;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+.text-white {
+    -fx-text-fill: #FFFFFF;
+}
+
+.button-verificar {
+    -fx-background-color: #007BFF;
+}
+
+.button-verificar:hover {
+    -fx-background-color: #0056B3;
+}
+
+.button-grow{
+    -fx-transition: -fx-scale-x 0.5s, -fx-scale-y 0.5s, -fx-background-color 0.10s, -fx-text-fill 0.10s;
+}
+
+.button-grow:hover {
+    -fx-scale-x: 1.5;
+    -fx-scale-y: 1.5;
+}

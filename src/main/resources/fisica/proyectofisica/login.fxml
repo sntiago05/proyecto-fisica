@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT" prefHeight="750.0" prefWidth="1200.0" stylesheets="@../../css/login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fisica.controller.LoginController">
+   <children>
+      <TabPane fx:id="tabPaneLogin" prefHeight="750.0" prefWidth="583.0">
+         <tabs>
+            <Tab closable="false" text="Iniciar sesion">
+               <content>
+                  <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="463.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="337.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="472.0" minHeight="10.0" prefHeight="378.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="377.0" minHeight="10.0" prefHeight="301.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="348.0" prefWidth="479.0" spacing="40.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <children>
+                              <StackPane alignment="CENTER_LEFT" prefHeight="134.0" prefWidth="323.0">
+                                 <children>
+                                    <TextField fx:id="txtNombre" prefHeight="31.0" prefWidth="458.0" styleClass="floating-field" />
+                                    <Label fx:id="labelNombre" styleClass="floating-label" text="nombre de usuario">
+                                       <StackPane.margin>
+                                          <Insets bottom="50.0" />
+                                       </StackPane.margin>
+                                    </Label>
+                                 </children>
+                              </StackPane>
+                              <StackPane alignment="CENTER_LEFT" layoutX="149.0" layoutY="10.0" prefHeight="134.0" prefWidth="323.0">
+                                 <children>
+                                    <PasswordField fx:id="txtPassword" styleClass="floating-field" />
+                                    <Label fx:id="labelPassword" styleClass="floating-label" text="contraseña">
+                                       <font>
+                                          <Font name="Microsoft Yi Baiti" size="1.0" />
+                                       </font>
+                                       <StackPane.margin>
+                                          <Insets bottom="50.0" />
+                                       </StackPane.margin>
+                                    </Label>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </VBox>
+                        <Button fx:id="button" mnemonicParsing="false" onAction="#login" prefHeight="45.0" prefWidth="180.0" text="Iniciar sesion" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="70.0" />
+                           </GridPane.margin>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </content>
+            </Tab>
+            <Tab closable="false" text="Registrarse">
+               <content>
+                  <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="463.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="337.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="472.0" minHeight="10.0" prefHeight="378.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="377.0" minHeight="10.0" prefHeight="301.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <VBox alignment="CENTER" fillWidth="false" prefHeight="348.0" prefWidth="479.0" spacing="40.0" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                           <children>
+                              <StackPane alignment="CENTER_LEFT" prefHeight="134.0" prefWidth="323.0">
+                                 <children>
+                                    <TextField fx:id="txtNombreR" prefHeight="31.0" prefWidth="458.0" styleClass="floating-field" />
+                                    <Label fx:id="labelNombreR" styleClass="floating-label" text="nombre de usuario">
+                                       <StackPane.margin>
+                                          <Insets bottom="50.0" />
+                                       </StackPane.margin></Label>
+                                 </children>
+                              </StackPane>
+                              <StackPane alignment="CENTER_LEFT" layoutX="149.0" layoutY="10.0" prefHeight="134.0" prefWidth="323.0">
+                                 <children>
+                                    <PasswordField fx:id="txtPasswordR" styleClass="floating-field" />
+                                    <Label fx:id="labelPasswordR" styleClass="floating-label" text="contraseña">
+                                       <font>
+                                          <Font name="Microsoft Yi Baiti" size="1.0" />
+                                       </font>
+                                       <StackPane.margin>
+                                          <Insets bottom="50.0" />
+                                       </StackPane.margin>
+                                    </Label>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </VBox>
+                        <Button fx:id="buttonR" mnemonicParsing="false" onAction="#register" prefHeight="45.0" prefWidth="180.0" text="Registrarse" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                           <font>
+                              <Font name="Montserrat Regular" size="12.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="70.0" />
+                           </GridPane.margin>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </content>
+            </Tab>
+         </tabs>
+         <HBox.margin>
+            <Insets left="20.0" top="20.0" />
+         </HBox.margin>
+      </TabPane>
+      <VBox alignment="CENTER" fillWidth="false" prefWidth="617.0">
+         <children>
+            <ImageView fitHeight="790.0" fitWidth="617.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imgs/login-img.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</HBox>

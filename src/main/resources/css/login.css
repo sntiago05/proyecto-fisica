@@ -1,0 +1,66 @@
+.root {
+    -fx-font-family: "Montserrat";
+    -fx-background-color: #FFFFFF;
+}
+
+.floating-label {
+    -fx-text-fill: #000000;
+    -fx-font-size: 16px;
+    -fx-padding: 0 0 0 5;
+}
+
+.floating-field {
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: #ccc;
+    -fx-padding: 5 0 5 5;
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+.floating-field:focused {
+    -fx-border-color: #2196f3;
+}
+
+.button {
+    -fx-background-color: #3FB1EE;
+    -fx-background-radius: 20;
+    -fx-text-fill: #FFFFFF;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #1976d2;
+}
+
+.tab-pane {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab-header-background {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab {
+    -fx-background-color: transparent;
+    -fx-padding: 8 15 8 15;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #2196f3;
+    -fx-text-base-color: white;
+    -fx-border-color: transparent transparent #2196f3 transparent;
+}
+
+.tab-pane .tab-label {
+    -fx-text-fill: #000000;
+}
+
+
+.tab-pane .tab {
+    -fx-border-color: transparent transparent transparent transparent;
+}

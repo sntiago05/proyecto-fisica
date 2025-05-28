@@ -1,0 +1,58 @@
+.header {
+    -fx-background-color: #2196f3;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 8px;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #a0a0a0;
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: #e0e0e0;
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-pref-height: 8px;
+}
+
+.scroll-bar:horizontal .thumb {
+    -fx-background-color: #3f51b5;
+    -fx-background-radius: 5px;
+}
+
+.scroll-bar:horizontal .track {
+    -fx-background-color: #e0e0e0;
+    -fx-background-radius: 5px;
+}
+
+.button-cerrar-sesion {
+    -fx-background-color: #dc3545;
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+    -fx-padding: 10 20 10 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.3, 0, 3);
+}
+
+.button-cerrar-sesion:hover {
+    -fx-background-color: #a21f2d;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 12, 0.3, 0, 4);
+}
+

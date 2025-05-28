@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fisica.controller.MainController">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="645.0" minWidth="10.0" prefWidth="607.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="593.0" minWidth="10.0" prefWidth="593.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="272.0" minHeight="10.0" prefHeight="115.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="599.0" minHeight="10.0" prefHeight="599.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="317.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <ScrollPane hbarPolicy="NEVER" maxWidth="650.0" minWidth="650.0" prefHeight="574.0" prefWidth="650.0" GridPane.rowIndex="1">
+            <content>
+                <GridPane fx:id="gridEjercicios" hgap="10.0" prefHeight="555.0" prefWidth="650.0" style="-fx-background-color: white;" vgap="10.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+                </GridPane>
+            </content>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets left="25.0" right="25.0" top="25.0" />
+         </GridPane.margin>
+        </ScrollPane>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="header" GridPane.columnSpan="2">
+         <children>
+            <Label text="LISTADO DE EJERCICIOS" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" prefHeight="574.0" prefWidth="588.0" spacing="45.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets top="25.0" />
+         </GridPane.margin>
+         <children>
+            <Label text="INFORMACION DEL EJERCICIO">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="68.0" prefWidth="555.0" spacing="35.0">
+               <children>
+                  <Label prefWidth="100.0" text="Titulo:  ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTitulo" layoutX="10.0" layoutY="10.0" prefHeight="61.0" prefWidth="200.0" text="textopre" wrapText="true">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="60.0" prefHeight="68.0" prefWidth="555.0" spacing="35.0">
+               <children>
+                  <Label prefHeight="15.0" prefWidth="100.0" text="Tipo: ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTipo" layoutX="10.0" layoutY="10.0" prefWidth="200.0" text="textopre">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="163.0" prefHeight="68.0" prefWidth="555.0" spacing="35.0">
+               <children>
+                  <Label prefWidth="100.0" text="Estado: ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelEstado" layoutX="10.0" layoutY="10.0" prefWidth="200.0" text="textopre">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#cerrarSesion" styleClass="button-cerrar-sesion" text="Cerrar sesion">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+    </children>
+   <stylesheets>
+      <URL value="@../../css/card.css" />
+      <URL value="@../../css/main.css" />
+   </stylesheets>
+</GridPane>
