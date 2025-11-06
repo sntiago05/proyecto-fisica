@@ -10,9 +10,9 @@
         </provider>
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://turntable.proxy.rlwy.net:50841/railway"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/proyecto_fisica_demo"/>
             <property name="jakarta.persistence.jdbc.user" value="root"/>
-            <property name="jakarta.persistence.jdbc.password" value="iWRaIYSlsFRuZYNTmHFZskHItMneEvFJ"/>
+            <property name="jakarta.persistence.jdbc.password" value="Santiemil01*"/>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
         </properties>
